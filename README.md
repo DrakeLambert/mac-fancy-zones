@@ -1,5 +1,9 @@
 # mac-fancy-zones
 
+![Demo: editing zones, Shift-drag to snap, Shift+Ctrl-drag to span zones](docs/demo.gif)
+
+[Full-quality video](docs/demo.mp4)
+
 ## What it does
 Menu-bar macOS window manager with snap zones. **Edit Zones…** (menu bar icon) lets you draw zones on a 12×12 grid and set the gap between zones plus a Stage Manager left inset, all on one screen.
 Drag a window by its title bar holding **Shift**: zones appear behind it, drop to snap (animated). Add **Ctrl** to span several zones.

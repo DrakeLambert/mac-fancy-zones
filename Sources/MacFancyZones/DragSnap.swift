@@ -18,7 +18,10 @@ final class DragSnap {
         // Don't let one hung app block the main thread inside an AX call.
         AXUIElementSetMessagingTimeout(AXUIElementCreateSystemWide(), 0.25)
         monitor(.leftMouseDown) { [weak self] in self?.down() }
-        monitor(.leftMouseUp) { [weak self] in self?.up() }    }
+        monitor(.leftMouseUp) { [weak self] in self?.up() }
+        // Releasing the button while Ctrl is held can arrive as a right-button release (Ctrl-click = right-click).
+        monitor(.rightMouseUp) { [weak self] in self?.up() }
+    }
 
     /// Global monitors miss events delivered to our own windows (e.g. a drop over Settings), so also install a local one.
     private func monitor(_ mask: NSEvent.EventTypeMask, _ handler: @escaping () -> Void) {

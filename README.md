@@ -1,6 +1,6 @@
 # mac-fancy-zones
 
-<video src="https://github.com/DrakeLambert/mac-fancy-zones/raw/main/docs/demo.mp4" controls muted loop width="100%"></video>
+https://github.com/user-attachments/assets/dafac2db-38a0-4502-bf66-3be621fe0aff
 
 ## What it does
 Menu-bar macOS window manager with snap zones. **Edit Zones…** (menu bar icon) lets you draw zones on a 12×12 grid and set the gap between zones plus a Stage Manager left inset, all on one screen.
